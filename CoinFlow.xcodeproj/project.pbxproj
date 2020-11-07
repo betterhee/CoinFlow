@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5DF909502556483600F33130 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF9094F2556483600F33130 /* AppDelegate.swift */; };
+		5DF909522556483600F33130 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF909512556483600F33130 /* SceneDelegate.swift */; };
+		5DF909542556483600F33130 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF909532556483600F33130 /* ViewController.swift */; };
+		5DF909572556483600F33130 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DF909552556483600F33130 /* Main.storyboard */; };
+		5DF909592556483800F33130 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DF909582556483800F33130 /* Assets.xcassets */; };
+		5DF9095C2556483800F33130 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DF9095A2556483800F33130 /* LaunchScreen.storyboard */; };
+		5DF909672556483900F33130 /* CoinFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF909662556483900F33130 /* CoinFlowTests.swift */; };
+		5DF909722556483900F33130 /* CoinFlowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF909712556483900F33130 /* CoinFlowUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5DF909632556483900F33130 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DF909442556483600F33130 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DF9094B2556483600F33130;
+			remoteInfo = CoinFlow;
+		};
+		5DF9096E2556483900F33130 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DF909442556483600F33130 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DF9094B2556483600F33130;
+			remoteInfo = CoinFlow;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5DF9094C2556483600F33130 /* CoinFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DF9094F2556483600F33130 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5DF909512556483600F33130 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5DF909532556483600F33130 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5DF909562556483600F33130 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5DF909582556483800F33130 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5DF9095B2556483800F33130 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5DF9095D2556483800F33130 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DF909622556483900F33130 /* CoinFlowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoinFlowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DF909662556483900F33130 /* CoinFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinFlowTests.swift; sourceTree = "<group>"; };
+		5DF909682556483900F33130 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DF9096D2556483900F33130 /* CoinFlowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoinFlowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DF909712556483900F33130 /* CoinFlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinFlowUITests.swift; sourceTree = "<group>"; };
+		5DF909732556483900F33130 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5DF909492556483600F33130 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DF9095F2556483900F33130 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DF9096A2556483900F33130 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5DF909432556483600F33130 = {
+			isa = PBXGroup;
+			children = (
+				5DF9094E2556483600F33130 /* CoinFlow */,
+				5DF909652556483900F33130 /* CoinFlowTests */,
+				5DF909702556483900F33130 /* CoinFlowUITests */,
+				5DF9094D2556483600F33130 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5DF9094D2556483600F33130 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5DF9094C2556483600F33130 /* CoinFlow.app */,
+				5DF909622556483900F33130 /* CoinFlowTests.xctest */,
+				5DF9096D2556483900F33130 /* CoinFlowUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5DF9094E2556483600F33130 /* CoinFlow */ = {
+			isa = PBXGroup;
+			children = (
+				5DF9094F2556483600F33130 /* AppDelegate.swift */,
+				5DF909512556483600F33130 /* SceneDelegate.swift */,
+				5DF909532556483600F33130 /* ViewController.swift */,
+				5DF909552556483600F33130 /* Main.storyboard */,
+				5DF909582556483800F33130 /* Assets.xcassets */,
+				5DF9095A2556483800F33130 /* LaunchScreen.storyboard */,
+				5DF9095D2556483800F33130 /* Info.plist */,
+			);
+			path = CoinFlow;
+			sourceTree = "<group>";
+		};
+		5DF909652556483900F33130 /* CoinFlowTests */ = {
+			isa = PBXGroup;
+			children = (
+				5DF909662556483900F33130 /* CoinFlowTests.swift */,
+				5DF909682556483900F33130 /* Info.plist */,
+			);
+			path = CoinFlowTests;
+			sourceTree = "<group>";
+		};
+		5DF909702556483900F33130 /* CoinFlowUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5DF909712556483900F33130 /* CoinFlowUITests.swift */,
+				5DF909732556483900F33130 /* Info.plist */,
+			);
+			path = CoinFlowUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5DF9094B2556483600F33130 /* CoinFlow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DF909762556483900F33130 /* Build configuration list for PBXNativeTarget "CoinFlow" */;
+			buildPhases = (
+				5DF909482556483600F33130 /* Sources */,
+				5DF909492556483600F33130 /* Frameworks */,
+				5DF9094A2556483600F33130 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoinFlow;
+			productName = CoinFlow;
+			productReference = 5DF9094C2556483600F33130 /* CoinFlow.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5DF909612556483900F33130 /* CoinFlowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DF909792556483900F33130 /* Build configuration list for PBXNativeTarget "CoinFlowTests" */;
+			buildPhases = (
+				5DF9095E2556483900F33130 /* Sources */,
+				5DF9095F2556483900F33130 /* Frameworks */,
+				5DF909602556483900F33130 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DF909642556483900F33130 /* PBXTargetDependency */,
+			);
+			name = CoinFlowTests;
+			productName = CoinFlowTests;
+			productReference = 5DF909622556483900F33130 /* CoinFlowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5DF9096C2556483900F33130 /* CoinFlowUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DF9097C2556483900F33130 /* Build configuration list for PBXNativeTarget "CoinFlowUITests" */;
+			buildPhases = (
+				5DF909692556483900F33130 /* Sources */,
+				5DF9096A2556483900F33130 /* Frameworks */,
+				5DF9096B2556483900F33130 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DF9096F2556483900F33130 /* PBXTargetDependency */,
+			);
+			name = CoinFlowUITests;
+			productName = CoinFlowUITests;
+			productReference = 5DF9096D2556483900F33130 /* CoinFlowUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5DF909442556483600F33130 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					5DF9094B2556483600F33130 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					5DF909612556483900F33130 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 5DF9094B2556483600F33130;
+					};
+					5DF9096C2556483900F33130 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 5DF9094B2556483600F33130;
+					};
+				};
+			};
+			buildConfigurationList = 5DF909472556483600F33130 /* Build configuration list for PBXProject "CoinFlow" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5DF909432556483600F33130;
+			productRefGroup = 5DF9094D2556483600F33130 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5DF9094B2556483600F33130 /* CoinFlow */,
+				5DF909612556483900F33130 /* CoinFlowTests */,
+				5DF9096C2556483900F33130 /* CoinFlowUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5DF9094A2556483600F33130 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DF9095C2556483800F33130 /* LaunchScreen.storyboard in Resources */,
+				5DF909592556483800F33130 /* Assets.xcassets in Resources */,
+				5DF909572556483600F33130 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DF909602556483900F33130 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DF9096B2556483900F33130 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5DF909482556483600F33130 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DF909542556483600F33130 /* ViewController.swift in Sources */,
+				5DF909502556483600F33130 /* AppDelegate.swift in Sources */,
+				5DF909522556483600F33130 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DF9095E2556483900F33130 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DF909672556483900F33130 /* CoinFlowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DF909692556483900F33130 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DF909722556483900F33130 /* CoinFlowUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5DF909642556483900F33130 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DF9094B2556483600F33130 /* CoinFlow */;
+			targetProxy = 5DF909632556483900F33130 /* PBXContainerItemProxy */;
+		};
+		5DF9096F2556483900F33130 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DF9094B2556483600F33130 /* CoinFlow */;
+			targetProxy = 5DF9096E2556483900F33130 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5DF909552556483600F33130 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DF909562556483600F33130 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5DF9095A2556483800F33130 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DF9095B2556483800F33130 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5DF909742556483900F33130 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5DF909752556483900F33130 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5DF909772556483900F33130 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CoinFlow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.betterhee.CoinFlow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5DF909782556483900F33130 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CoinFlow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.betterhee.CoinFlow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5DF9097A2556483900F33130 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CoinFlowTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.betterhee.CoinFlowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoinFlow.app/CoinFlow";
+			};
+			name = Debug;
+		};
+		5DF9097B2556483900F33130 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CoinFlowTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.betterhee.CoinFlowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoinFlow.app/CoinFlow";
+			};
+			name = Release;
+		};
+		5DF9097D2556483900F33130 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CoinFlowUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.betterhee.CoinFlowUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CoinFlow;
+			};
+			name = Debug;
+		};
+		5DF9097E2556483900F33130 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CoinFlowUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.betterhee.CoinFlowUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CoinFlow;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5DF909472556483600F33130 /* Build configuration list for PBXProject "CoinFlow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DF909742556483900F33130 /* Debug */,
+				5DF909752556483900F33130 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DF909762556483900F33130 /* Build configuration list for PBXNativeTarget "CoinFlow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DF909772556483900F33130 /* Debug */,
+				5DF909782556483900F33130 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DF909792556483900F33130 /* Build configuration list for PBXNativeTarget "CoinFlowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DF9097A2556483900F33130 /* Debug */,
+				5DF9097B2556483900F33130 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DF9097C2556483900F33130 /* Build configuration list for PBXNativeTarget "CoinFlowUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DF9097D2556483900F33130 /* Debug */,
+				5DF9097E2556483900F33130 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5DF909442556483600F33130 /* Project object */;
+}
