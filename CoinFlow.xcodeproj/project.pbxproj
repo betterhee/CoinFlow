@@ -9,12 +9,18 @@
 /* Begin PBXBuildFile section */
 		5DF909502556483600F33130 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF9094F2556483600F33130 /* AppDelegate.swift */; };
 		5DF909522556483600F33130 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF909512556483600F33130 /* SceneDelegate.swift */; };
-		5DF909542556483600F33130 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF909532556483600F33130 /* ViewController.swift */; };
 		5DF909572556483600F33130 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DF909552556483600F33130 /* Main.storyboard */; };
 		5DF909592556483800F33130 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DF909582556483800F33130 /* Assets.xcassets */; };
 		5DF9095C2556483800F33130 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DF9095A2556483800F33130 /* LaunchScreen.storyboard */; };
 		5DF909672556483900F33130 /* CoinFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF909662556483900F33130 /* CoinFlowTests.swift */; };
 		5DF909722556483900F33130 /* CoinFlowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF909712556483900F33130 /* CoinFlowUITests.swift */; };
+		5DF909832556498C00F33130 /* ChartListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF909822556498C00F33130 /* ChartListViewController.swift */; };
+		5DF909882556499A00F33130 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF909872556499A00F33130 /* NewsViewController.swift */; };
+		5DF9098D255649B800F33130 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF9098C255649B800F33130 /* SettingViewController.swift */; };
+		5DF9099E255649FE00F33130 /* ChartDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF9099D255649FE00F33130 /* ChartDetailViewController.swift */; };
+		5DF909A62556569A00F33130 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DF909A52556569A00F33130 /* News.storyboard */; };
+		5DF909AB255656D100F33130 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DF909AA255656D100F33130 /* Setting.storyboard */; };
+		5DF909B02556572100F33130 /* Chart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DF909AF2556572100F33130 /* Chart.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +44,6 @@
 		5DF9094C2556483600F33130 /* CoinFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DF9094F2556483600F33130 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DF909512556483600F33130 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5DF909532556483600F33130 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5DF909562556483600F33130 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5DF909582556483800F33130 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5DF9095B2556483800F33130 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +54,13 @@
 		5DF9096D2556483900F33130 /* CoinFlowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoinFlowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DF909712556483900F33130 /* CoinFlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinFlowUITests.swift; sourceTree = "<group>"; };
 		5DF909732556483900F33130 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DF909822556498C00F33130 /* ChartListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartListViewController.swift; sourceTree = "<group>"; };
+		5DF909872556499A00F33130 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		5DF9098C255649B800F33130 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		5DF9099D255649FE00F33130 /* ChartDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartDetailViewController.swift; sourceTree = "<group>"; };
+		5DF909A52556569A00F33130 /* News.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = News.storyboard; path = CoinFlow/News/News.storyboard; sourceTree = SOURCE_ROOT; };
+		5DF909AA255656D100F33130 /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		5DF909AF2556572100F33130 /* Chart.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Chart.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +113,10 @@
 			children = (
 				5DF9094F2556483600F33130 /* AppDelegate.swift */,
 				5DF909512556483600F33130 /* SceneDelegate.swift */,
-				5DF909532556483600F33130 /* ViewController.swift */,
 				5DF909552556483600F33130 /* Main.storyboard */,
+				5DF90991255649CA00F33130 /* Chart */,
+				5DF90995255649D400F33130 /* News */,
+				5DF90999255649DA00F33130 /* Setting */,
 				5DF909582556483800F33130 /* Assets.xcassets */,
 				5DF9095A2556483800F33130 /* LaunchScreen.storyboard */,
 				5DF9095D2556483800F33130 /* Info.plist */,
@@ -126,6 +140,34 @@
 				5DF909732556483900F33130 /* Info.plist */,
 			);
 			path = CoinFlowUITests;
+			sourceTree = "<group>";
+		};
+		5DF90991255649CA00F33130 /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				5DF909AF2556572100F33130 /* Chart.storyboard */,
+				5DF909822556498C00F33130 /* ChartListViewController.swift */,
+				5DF9099D255649FE00F33130 /* ChartDetailViewController.swift */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
+		5DF90995255649D400F33130 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				5DF909A52556569A00F33130 /* News.storyboard */,
+				5DF909872556499A00F33130 /* NewsViewController.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		5DF90999255649DA00F33130 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				5DF909AA255656D100F33130 /* Setting.storyboard */,
+				5DF9098C255649B800F33130 /* SettingViewController.swift */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +275,10 @@
 			files = (
 				5DF9095C2556483800F33130 /* LaunchScreen.storyboard in Resources */,
 				5DF909592556483800F33130 /* Assets.xcassets in Resources */,
+				5DF909AB255656D100F33130 /* Setting.storyboard in Resources */,
 				5DF909572556483600F33130 /* Main.storyboard in Resources */,
+				5DF909A62556569A00F33130 /* News.storyboard in Resources */,
+				5DF909B02556572100F33130 /* Chart.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +303,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DF909542556483600F33130 /* ViewController.swift in Sources */,
+				5DF9099E255649FE00F33130 /* ChartDetailViewController.swift in Sources */,
+				5DF909832556498C00F33130 /* ChartListViewController.swift in Sources */,
 				5DF909502556483600F33130 /* AppDelegate.swift in Sources */,
+				5DF909882556499A00F33130 /* NewsViewController.swift in Sources */,
 				5DF909522556483600F33130 /* SceneDelegate.swift in Sources */,
+				5DF9098D255649B800F33130 /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
