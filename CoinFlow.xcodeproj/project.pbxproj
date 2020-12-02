@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D077EF9255F8F7900707326 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D077EE0255F794D00707326 /* UIColor.swift */; };
 		5DF909502556483600F33130 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF9094F2556483600F33130 /* AppDelegate.swift */; };
 		5DF909522556483600F33130 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF909512556483600F33130 /* SceneDelegate.swift */; };
 		5DF909572556483600F33130 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DF909552556483600F33130 /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D077EE0255F794D00707326 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		5DF9094C2556483600F33130 /* CoinFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DF9094F2556483600F33130 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DF909512556483600F33130 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D077EE8255F795F00707326 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5D077EE0255F794D00707326 /* UIColor.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		5DF909432556483600F33130 = {
 			isa = PBXGroup;
 			children = (
@@ -111,13 +121,14 @@
 		5DF9094E2556483600F33130 /* CoinFlow */ = {
 			isa = PBXGroup;
 			children = (
+				5D077EE8255F795F00707326 /* Extension */,
 				5DF9094F2556483600F33130 /* AppDelegate.swift */,
 				5DF909512556483600F33130 /* SceneDelegate.swift */,
-				5DF909552556483600F33130 /* Main.storyboard */,
 				5DF90991255649CA00F33130 /* Chart */,
 				5DF90995255649D400F33130 /* News */,
 				5DF90999255649DA00F33130 /* Setting */,
 				5DF909582556483800F33130 /* Assets.xcassets */,
+				5DF909552556483600F33130 /* Main.storyboard */,
 				5DF9095A2556483800F33130 /* LaunchScreen.storyboard */,
 				5DF9095D2556483800F33130 /* Info.plist */,
 			);
@@ -304,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DF9099E255649FE00F33130 /* ChartDetailViewController.swift in Sources */,
+				5D077EF9255F8F7900707326 /* UIColor.swift in Sources */,
 				5DF909832556498C00F33130 /* ChartListViewController.swift in Sources */,
 				5DF909502556483600F33130 /* AppDelegate.swift in Sources */,
 				5DF909882556499A00F33130 /* NewsViewController.swift in Sources */,
