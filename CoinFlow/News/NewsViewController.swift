@@ -13,6 +13,21 @@ class NewsViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        NetworkManager.requestNewsList { result in
+            switch result {
+            case .success(let articles):
+                print("--> articles: \(articles.count)")
+            case .failure(let error):
+                print("--> error: \(error.localizedDescription)")
+            }
+        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+    }
 }
 
 // MARK: - TableView
@@ -25,11 +40,8 @@ extension NewsViewController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "NewsListCell", for: indexPath) as? NewsListCell else {
             return UITableViewCell()
         }
-        
         return cell
     }
-    
-    
 }
 
 
