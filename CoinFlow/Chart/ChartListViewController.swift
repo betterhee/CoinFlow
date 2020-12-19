@@ -7,11 +7,22 @@
 
 import UIKit
 
+typealias CoinInfo = (key: CoinType, value: Coin)
+
 class ChartListViewController: UIViewController {
     @IBOutlet weak var chartCollectionView: UICollectionView!
     @IBOutlet weak var chartTableView: UITableView!
     @IBOutlet weak var chartTableViewHeight: NSLayoutConstraint!
-    
+
+    var coinInfoList: [CoinInfo] = [] {
+        didSet {
+            DispatchQueue.main.async {
+                self.chartTableView.reloadData()
+                self.adjustTableViewHeight()
+            }
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -22,7 +33,8 @@ class ChartListViewController: UIViewController {
         NetworkManager.requestCoinList { result in
             switch result {
             case .success(let coins):
-                print("--> coin list: \(coins.count)")
+                let tuples = zip(CoinType.allCases, coins).map { (key: $0, value: $1) }
+                self.coinInfoList = tuples
             case .failure(let error):
                 print("--> error: \(error.localizedDescription)")
             }
@@ -61,7 +73,7 @@ extension ChartListViewController {
 // MARK: - CollectionView Delegate
 extension ChartListViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return 15
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -90,18 +102,46 @@ class ChartCardCell: UICollectionViewCell {
 // MARK: - TableView Delegate
 extension ChartListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 15
+        return coinInfoList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "ChartListCell", for: indexPath) as? ChartListCell else {
             return UITableViewCell()
         }
-        cell.backgroundColor = UIColor.randomColor()
+        let coinInfo = coinInfoList[indexPath.row]
+        cell.configCell(coinInfo)
         return cell
     }
 }
 
 class ChartListCell: UITableViewCell {
-    
+    @IBOutlet weak var currentStatusBox: UIView!
+    @IBOutlet weak var coinName: UILabel!
+    @IBOutlet weak var currentPrice: UILabel!
+    @IBOutlet weak var change24Hours: UILabel!
+    @IBOutlet weak var changePercent: UILabel!
+    @IBOutlet weak var currentStatusImageView: UIImageView!
+
+    func configCell(_ info: CoinInfo) {
+        let coinType = info.key
+        let coin = info.value
+
+        let isUnderPerform = coin.usd.changeLast24H < 0
+        let upColor = UIColor.systemPink
+        let downColor = UIColor.systemBlue
+        let color = isUnderPerform ? downColor : upColor
+
+        currentStatusBox.backgroundColor = color
+        coinName.text = coinType.rawValue
+        currentPrice.text = String(format: "%.1f", coin.usd.price)
+        change24Hours.text = String(format: "%.1f", coin.usd.changeLast24H)
+        changePercent.text = String(format: "%.1f %%", coin.usd.changePercentLast24H)
+        change24Hours.textColor = color
+        changePercent.textColor = color
+
+        let statusImage = isUnderPerform ? UIImage(systemName: "arrowtriangle.down.fill") : UIImage(systemName: "arrowtriangle.up.fill")
+        currentStatusImageView.image = statusImage
+        currentStatusImageView.tintColor = color
+    }
 }
