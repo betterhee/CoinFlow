@@ -24,13 +24,13 @@ enum Period: String, CaseIterable {
     
     var limitParameter: Int {
         switch self {
-        case .day:
+        case .day: // hour
             return 24
-        case .week:
+        case .week: // hour
             return 7 * 24 / 2
-        case .month:
+        case .month: // day
             return 30 / 1
-        case .year:
+        case .year: // day
             return 365 / 10
         }
     }
