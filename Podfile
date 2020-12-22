@@ -7,6 +7,7 @@ target 'CoinFlow' do
 
   # Pods for CoinFlow
   pod 'Charts'
+  pod 'Kingfisher', '~> 5.0'
 
   target 'CoinFlowTests' do
     inherit! :search_paths

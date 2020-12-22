@@ -38,7 +38,7 @@ extension Request {
     var headers: [String]? { return ["Content-Type", "Accept"] }
     
     func urlRequest() -> URLRequest {
-        var url = URL(string: path)!
+        let url = URL(string: path)!
         var request = URLRequest(url: url)
         
         // http method

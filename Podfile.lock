@@ -2,17 +2,23 @@ PODS:
   - Charts (3.6.0):
     - Charts/Core (= 3.6.0)
   - Charts/Core (3.6.0)
+  - Kingfisher (5.15.8):
+    - Kingfisher/Core (= 5.15.8)
+  - Kingfisher/Core (5.15.8)
 
 DEPENDENCIES:
   - Charts
+  - Kingfisher (~> 5.0)
 
 SPEC REPOS:
   trunk:
     - Charts
+    - Kingfisher
 
 SPEC CHECKSUMS:
   Charts: b1e3a1f5a1c9ba5394438ca3b91bd8c9076310af
+  Kingfisher: a3c03d702433fa6cfedabb2bddbe076fb8f2e902
 
-PODFILE CHECKSUM: 8b0a72fb3c6ada8feb4e45e8eb17b1695afcca50
+PODFILE CHECKSUM: 512ce435dc5b01b3d7b65827a3483d6d2fffee5f
 
 COCOAPODS: 1.10.0

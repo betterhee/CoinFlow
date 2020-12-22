@@ -25,11 +25,6 @@ class ChartListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
         NetworkManager.requestCoinList { result in
             switch result {
             case .success(let coins):
@@ -39,6 +34,10 @@ class ChartListViewController: UIViewController {
                 print("--> error: \(error.localizedDescription)")
             }
         }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
     }
     
     override func viewDidAppear(_ animated: Bool) {

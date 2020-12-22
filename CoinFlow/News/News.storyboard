@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vJs-Ur-hYN">
-    <device id="retina6_0" orientation="portrait" appearance="dark"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -33,22 +33,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kce-eL-OuX">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kce-eL-OuX">
                                 <rect key="frame" x="0.0" y="88" width="390" height="722"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsListCell" id="abn-M3-vSh" customClass="NewsListCell">
-                                        <rect key="frame" x="0.0" y="28" width="390" height="43.666667938232422"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="NewsListCell" id="abn-M3-vSh" customClass="NewsListCell" customModule="CoinFlow" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="390" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="abn-M3-vSh" id="ycP-x0-Hnc">
-                                            <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="358.66666666666669" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World, 2nd line, 3nd line" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dM6-mX-ihL">
+                                                    <rect key="frame" x="110" y="10.000000000000004" width="82.333333333333314" height="50.333333333333343"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17 Nov 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Emv-Ng-Cap">
+                                                    <rect key="frame" x="110" y="74.333333333333329" width="73" height="15.666666666666671"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="13"/>
+                                                    <color key="textColor" systemColor="systemGray2Color"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tiF-UZ-5RK">
+                                                    <rect key="frame" x="20" y="10" width="80" height="80"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="80" id="D9c-F1-xEx"/>
+                                                        <constraint firstAttribute="width" constant="80" id="auR-13-LI0"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="tiF-UZ-5RK" firstAttribute="leading" secondItem="ycP-x0-Hnc" secondAttribute="leading" constant="20" symbolic="YES" id="061-5i-IEi"/>
+                                                <constraint firstItem="dM6-mX-ihL" firstAttribute="leading" secondItem="tiF-UZ-5RK" secondAttribute="trailing" constant="10" id="8fm-Rz-Zan"/>
+                                                <constraint firstItem="tiF-UZ-5RK" firstAttribute="centerY" secondItem="ycP-x0-Hnc" secondAttribute="centerY" id="9mP-Sn-r1I"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dM6-mX-ihL" secondAttribute="trailing" constant="20" id="ATf-p7-n32"/>
+                                                <constraint firstItem="Emv-Ng-Cap" firstAttribute="bottom" secondItem="tiF-UZ-5RK" secondAttribute="bottom" id="Jma-WY-aAW"/>
+                                                <constraint firstItem="Emv-Ng-Cap" firstAttribute="leading" secondItem="tiF-UZ-5RK" secondAttribute="trailing" constant="10" id="b9K-8z-5Yw"/>
+                                                <constraint firstItem="dM6-mX-ihL" firstAttribute="top" secondItem="tiF-UZ-5RK" secondAttribute="top" id="p0e-Jd-zjD"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="newsDate" destination="Emv-Ng-Cap" id="heG-Ba-B1Q"/>
+                                            <outlet property="newsTitle" destination="dM6-mX-ihL" id="OvY-BS-dUB"/>
+                                            <outlet property="thumbnail" destination="tiF-UZ-5RK" id="v1m-Qx-Rgp"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="a7h-VM-Vei" id="iJx-ck-1Cd"/>
-                                    <outlet property="delegate" destination="a7h-VM-Vei" id="iVJ-Q3-UFG"/>
+                                    <outlet property="dataSource" destination="a7h-VM-Vei" id="S3f-ji-agi"/>
+                                    <outlet property="delegate" destination="a7h-VM-Vei" id="slp-LW-9ZD"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -63,16 +98,22 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="Tpd-ie-2RV"/>
                     <navigationItem key="navigationItem" title="News" id="2XR-tR-8Nz"/>
+                    <connections>
+                        <outlet property="newsTableView" destination="kce-eL-OuX" id="uwk-gn-Lac"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gC6-Gi-fhB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2493" y="1724"/>
+            <point key="canvasLocation" x="-2493.8461538461538" y="1723.9336492890995"/>
         </scene>
     </scenes>
     <resources>
         <image name="newspaper.fill" catalog="system" width="128" height="111"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
