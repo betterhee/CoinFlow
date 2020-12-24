@@ -12,25 +12,19 @@ class NewsViewController: UIViewController {
 
 
     @IBOutlet weak var newsTableView: UITableView!
-    var articles: [Article] = [] {
-        didSet {
-            DispatchQueue.main.async {
-                self.newsTableView.reloadData()
-            }
-        }
-    }
+
+    var viewModel: NewsListViewModel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        NetworkManager.requestNewsList { result in
-            switch result {
-            case .success(let articles):
-                self.articles = articles
-                print("--> articles \(articles)" )
-            case .failure(let error):
-                print("--> error: \(error.localizedDescription)")
+
+        viewModel = NewsListViewModel(changeHandler: { articles in
+            DispatchQueue.main.async {
+                self.newsTableView.reloadData()
             }
-        }
+        })
+
+        viewModel.fetchData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -41,22 +35,18 @@ class NewsViewController: UIViewController {
 // MARK: - TableView
 extension NewsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return articles.count
+        return viewModel.numberOfRowsInSection
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "NewsListCell", for: indexPath) as? NewsListCell else {
-            return UITableViewCell()
-        }
-        let article = articles[indexPath.row]
-        cell.configCell(article: article)
+        let cell = viewModel.cell(for: indexPath, at: tableView)
         return cell
     }
 }
 
 extension NewsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let article = articles[indexPath.row]
+        let article = viewModel.article(at: indexPath)
         guard let articleURL = URL(string: article.link) else { return }
 
         let config = SFSafariViewController.Configuration()
