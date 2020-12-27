@@ -34,11 +34,13 @@ class NewsViewController: UIViewController {
 
 // MARK: - TableView
 extension NewsViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView,
+                   numberOfRowsInSection section: Int) -> Int {
         return viewModel.numberOfRowsInSection
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView,
+                   cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = viewModel.cell(for: indexPath, at: tableView)
         return cell
     }
