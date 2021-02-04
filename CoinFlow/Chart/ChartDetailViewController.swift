@@ -11,7 +11,6 @@ import Charts
 typealias CoinChartInfo = (key: Period, value: [ChartData])
 class ChartDetailViewController: UIViewController {
 
-
     @IBOutlet weak var chartView: LineChartView!
     @IBOutlet weak var coinTypeLabel: UILabel!
     @IBOutlet weak var coinPriceLabel: UILabel!
@@ -110,7 +109,7 @@ extension ChartDetailViewController {
 
         let xAxis = chartView.xAxis
         xAxis.labelPosition = .bottom
-        xAxis.valueFormatter = xAxisDateForamtter(period: period)
+        xAxis.valueFormatter = ChartXAxisDateFormatter(period: period)
         xAxis.drawGridLinesEnabled = false
         xAxis.drawAxisLineEnabled = true
         xAxis.drawLabelsEnabled = true
@@ -136,21 +135,6 @@ extension ChartDetailViewController {
 
         let legend = chartView.legend
         legend.enabled = false
-    }
-}
-
-extension ChartDetailViewController {
-    private func xAxisDateForamtter(period: Period) -> IAxisValueFormatter {
-        switch period {
-        case .day:
-            return ChartXAxisDayFormatter()
-        case .week:
-            return ChartXAxisWeekFormatter()
-        case .month:
-            return ChartXAxisMonthFormatter()
-        case .year:
-            return ChartXAxisYearFormatter()
-        }
     }
 }
 

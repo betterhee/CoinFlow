@@ -8,38 +8,17 @@
 import Foundation
 import Charts
 
-class ChartXAxisDayFormatter: NSObject, IAxisValueFormatter {
-    func stringForValue(_ value: Double, axis: AxisBase?) -> String {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "H"
-        let hour = formatter.string(from: Date(timeIntervalSince1970: value))
-        return hour
-    }
-}
+final class ChartXAxisDateFormatter: NSObject, IAxisValueFormatter {
 
-class ChartXAxisWeekFormatter: NSObject, IAxisValueFormatter {
-    func stringForValue(_ value: Double, axis: AxisBase?) -> String {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "d"
-        let day = formatter.string(from: Date(timeIntervalSince1970: value))
-        return day
-    }
-}
+    let period: Period
 
-class ChartXAxisMonthFormatter: NSObject, IAxisValueFormatter {
-    func stringForValue(_ value: Double, axis: AxisBase?) -> String {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "d MMM"
-        let date = formatter.string(from: Date(timeIntervalSince1970: value))
-        return date
+    init(period: Period) {
+        self.period = period
     }
-}
 
-class ChartXAxisYearFormatter: NSObject, IAxisValueFormatter {
     func stringForValue(_ value: Double, axis: AxisBase?) -> String {
         let formatter = DateFormatter()
-        formatter.dateFormat = "MMM"
-        let month = formatter.string(from: Date(timeIntervalSince1970: value))
-        return month
+        formatter.dateFormat = period.dateFormat
+        return formatter.string(from: Date(timeIntervalSince1970: value))
     }
 }

@@ -12,7 +12,20 @@ enum Period: String, CaseIterable {
     case week
     case month
     case year
-    
+
+    var dateFormat: String {
+        switch self {
+        case .day:
+            return "H"
+        case .week:
+            return "d"
+        case .month:
+            return "d MMM"
+        case .year:
+            return "MMM"
+        }
+    }
+
     var urlPath: String {
         switch self {
         case .day, .week:
@@ -21,7 +34,7 @@ enum Period: String, CaseIterable {
             return "histoday"
         }
     }
-    
+
     var limitParameter: Int {
         switch self {
         case .day: // hour
@@ -34,7 +47,7 @@ enum Period: String, CaseIterable {
             return 365 / 10
         }
     }
-    
+
     var aggregateParameter: Int {
         switch self {
         case .day:
@@ -48,3 +61,4 @@ enum Period: String, CaseIterable {
         }
     }
 }
+
